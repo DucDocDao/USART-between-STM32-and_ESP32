@@ -59,3 +59,21 @@
 Open the **Serial Monitor** in the Arduino IDE. Ensure the baud rate is set exactly to **`115200` baud**.
 
 <img width="1853" height="365" alt="Result" src="https://github.com/user-attachments/assets/c04e64b7-e142-46d0-a034-1cf764978157" />
+
+# 🚀 4. Execution: ESP32 as Transmitter, STM32 as Receiver
+## 🔗 Hardware Wiring
+
+* **STM32 `PA10` (RX)** ➡️ **ESP32 `TX2`**
+* **ESP32 `GND`** ➡️ **ESP32 `GND`**
+
+<p align="center">
+  <img width="1440" height="2560" alt="image" src="https://github.com/user-attachments/assets/1e28ed79-1deb-4713-9d48-ebecae4ca3fc" />
+</p>
+
+
+## Since STM32 don't have Serial Monitor, we can still watch the data through Expressions:
+<p align="center">
+  <img width="492" height="678" alt="image" src="https://github.com/user-attachments/assets/cd5d696f-a8c3-4eab-845c-ad2b2bc9024b" />
+</p>
+
+
