@@ -8,7 +8,7 @@
 
 # 🔌 2. GPIO Configuration
 
-## 2.1. STM32F429I_DISC1 (Transmitter)
+## 2.1. STM32F429I_DISC1
 <p align="center">
   <img width="647" height="718" alt="STM32 GPIO" src="https://github.com/user-attachments/assets/c6989216-c90e-451b-afbe-925fbcf86afb" />
   <br>
@@ -20,7 +20,7 @@
   <em> Configure PA9 and PA10 </em>
 </p>
 
-## 2.2. ESP32 DEVKIT V1 (Receiver)
+## 2.2. ESP32 DEVKIT V1
 <p align="center">
   <img width="1258" height="712" alt="ESP32 GPIO" src="https://github.com/user-attachments/assets/878c80e2-c596-4289-a5af-ebefbd093dc0" />
   <br>
