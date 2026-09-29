@@ -1,4 +1,4 @@
-# ⚙️ 1. UART Configuration
+# ⚙️ 1. USART Configuration
 * Set USART1 mode to **Asynchronous** mode.
 * Other parameters can be kept at their **default** values.
 
