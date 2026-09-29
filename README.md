@@ -47,19 +47,15 @@
 * **Upload:** Flash the receiver code down to the board <img width="41" height="37" alt="Upload" src="https://github.com/user-attachments/assets/8fa584aa-c2c7-4cec-89b0-e7c2bf1cd43d" />
 
 ## 3.3. 🔗 Hardware Wiring
-> **⚠️ CRITICAL:** You must connect the GND pins of both boards together for the UART to function correctly and avoid garbage data.
 
 * **STM32 `PA9` (TX)** ➡️ **ESP32 `RX2`**
 * **STM32 `GND`** ➡️ **ESP32 `GND`**
 
 <p align="center">
   <img width="600" alt="Wiring Setup" src="https://github.com/user-attachments/assets/da10e1d0-d3b2-4a21-a3ae-986cc8d8cdfd" />
-  <br>
-  <em> Physical connection between STM32 and ESP32 </em>
 </p>
 
 ## 3.4. 🎯 Result
-Open the **Serial Monitor** in the Arduino IDE. 
-* Ensure the baud rate is set exactly to **`115200` baud**.
+Open the **Serial Monitor** in the Arduino IDE. Ensure the baud rate is set exactly to **`115200` baud**.
 
 <img width="1853" height="365" alt="Result" src="https://github.com/user-attachments/assets/c04e64b7-e142-46d0-a034-1cf764978157" />
