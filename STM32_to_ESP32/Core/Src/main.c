@@ -662,12 +662,8 @@ void StartDefaultTask(void const * argument)
     /* Infinite loop */
     for(;;)
     {
-      // 2. VIẾT LỆNH GỬI DỮ LIỆU Ở ĐÂY (Bên trong vòng lặp for)
-      // STM32 liên tục gửi chuỗi dữ liệu đi qua cổng UART1
       HAL_UART_Transmit(&huart1, (uint8_t*)tx_msg, strlen(tx_msg), 100);
-
-      // Dừng 1 giây (1000ms) trước khi gửi lần tiếp theo
-      osDelay(10000);
+      osDelay(5000);
     }
   /* USER CODE END 5 */
 }

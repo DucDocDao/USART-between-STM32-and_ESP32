@@ -1,4 +1,4 @@
-# ⚙️ 1. UART Configuration
+# ⚙️ 1. USART Configuration
 * Set USART1 mode to **Asynchronous** mode.
 * Other parameters can be kept at their **default** values.
 
@@ -8,7 +8,7 @@
 
 # 🔌 2. GPIO Configuration
 
-## 2.1. STM32F429I_DISC1 (Transmitter)
+## 2.1. STM32F429I_DISC1
 <p align="center">
   <img width="647" height="718" alt="STM32 GPIO" src="https://github.com/user-attachments/assets/c6989216-c90e-451b-afbe-925fbcf86afb" />
   <br>
@@ -20,7 +20,7 @@
   <em> Configure PA9 and PA10 </em>
 </p>
 
-## 2.2. ESP32 DEVKIT V1 (Receiver)
+## 2.2. ESP32 DEVKIT V1
 <p align="center">
   <img width="1258" height="712" alt="ESP32 GPIO" src="https://github.com/user-attachments/assets/878c80e2-c596-4289-a5af-ebefbd093dc0" />
   <br>
@@ -47,19 +47,33 @@
 * **Upload:** Flash the receiver code down to the board <img width="41" height="37" alt="Upload" src="https://github.com/user-attachments/assets/8fa584aa-c2c7-4cec-89b0-e7c2bf1cd43d" />
 
 ## 3.3. 🔗 Hardware Wiring
-> **⚠️ CRITICAL:** You must connect the GND pins of both boards together for the UART to function correctly and avoid garbage data.
 
 * **STM32 `PA9` (TX)** ➡️ **ESP32 `RX2`**
 * **STM32 `GND`** ➡️ **ESP32 `GND`**
 
 <p align="center">
   <img width="600" alt="Wiring Setup" src="https://github.com/user-attachments/assets/da10e1d0-d3b2-4a21-a3ae-986cc8d8cdfd" />
-  <br>
-  <em> Physical connection between STM32 and ESP32 </em>
 </p>
 
 ## 3.4. 🎯 Result
-Open the **Serial Monitor** in the Arduino IDE. 
-* Ensure the baud rate is set exactly to **`115200` baud**.
+Open the **Serial Monitor** in the Arduino IDE. Ensure the baud rate is set exactly to **`115200` baud**.
 
 <img width="1853" height="365" alt="Result" src="https://github.com/user-attachments/assets/c04e64b7-e142-46d0-a034-1cf764978157" />
+
+# 🚀 4. Execution: ESP32 as Transmitter, STM32 as Receiver
+## 🔗 Hardware Wiring
+
+* **STM32 `PA10` (RX)** ➡️ **ESP32 `TX2`**
+* **ESP32 `GND`** ➡️ **ESP32 `GND`**
+
+<p align="center">
+  <img width="1440" height="2560" alt="image" src="https://github.com/user-attachments/assets/1e28ed79-1deb-4713-9d48-ebecae4ca3fc" />
+</p>
+
+
+## Since STM32 don't have Serial Monitor, we can still watch the data through Expressions:
+<p align="center">
+  <img width="492" height="678" alt="image" src="https://github.com/user-attachments/assets/cd5d696f-a8c3-4eab-845c-ad2b2bc9024b" />
+</p>
+
+
